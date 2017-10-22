@@ -1,0 +1,765 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,700i,900,900i&subset=latin-ext');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=latin-ext');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 0;
+    max-width: 1800px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+[class*="col-"] {
+    width: 100%;
+    float: left;
+    padding: 0 15px;
+}
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.col-offset-0 {
+    margin-left: 0;
+}
+
+.col-offset-1 {
+    margin-left: 8.33%;
+}
+
+.col-offset-2 {
+    margin-left: 16.66%;
+}
+
+.col-offset-3 {
+    margin-left: 25%;
+}
+
+.col-offset-4 {
+    margin-left: 33.33%;
+}
+
+.col-offset-5 {
+    margin-left: 41.66%;
+}
+
+.col-offset-6 {
+    margin-left: 50%;
+}
+
+.col-offset-7 {
+    margin-left: 58.33%;
+}
+
+.col-offset-8 {
+    margin-left: 66.66%;
+}
+
+.col-offset-9 {
+    margin-left: 75%;
+}
+
+.col-offset-10 {
+    margin-left: 83.33%;
+}
+
+.col-offset-11 {
+    margin-left: 91.66%;
+}
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*==============SECTION JUMBOTRON=============*/
+
+.jumbotron {
+    background-image: url(img/main-image.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 951px;
+}
+
+
+.logo {
+    margin-top: 56px;
+    height: 41px;
+    width: 92px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    margin-left: 1px;
+    width: 41px;
+    height: 41px;
+}
+
+.logo h1 {
+    font-family: 'Merriweather', serif;
+    display: flex;
+    font-size: 21px;
+    line-height: 21px;
+    font-style: italic;
+    font-weight: 800;
+    color: #fff;
+    align-self: center;
+}
+
+.slogan {
+    margin-top: 320px;
+}
+
+.slogan h1 {
+    font-weight: 300;
+    font-size: 60px;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 21px;
+}
+
+.slogan p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 24px;
+}
+
+.iphone2-container {
+    position: relative;
+    top: 170px;
+    overflow: hidden;
+}
+
+/*==============SECTION DESCRIPTION============*/
+
+.description {
+    margin-bottom: 80px;
+}
+
+.description-container {
+    z-index: 100;
+    position: relative;
+}
+
+.left h3 {
+    font-size: 35px;
+    font-weight: 300;
+    color: #222626;
+}
+
+.left p,
+.right p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #959595;
+    line-height: 24px;
+}
+
+/*==============SECTION BOX-GRID============*/
+
+.box-small,
+.box-big {
+    min-height: 278px;
+    color: #fff;
+    padding: 0 40px 40px 40px;
+    position: relative;
+}
+
+.box-big {
+    background: url(img/Box%20Large.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.box-big:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.box-small:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.one {
+    background-color: #f5989d;
+}
+
+.two {
+    background-color: #615f7d;
+}
+
+.three {
+    background: url(img/Layer%206.jpg);
+    background-color: #091e28;
+    background-position: center center;
+    background-size: cover;
+}
+
+.five {
+    background-color: #82ca9c;
+}
+
+.box-small h3,
+.box-big h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.box-small p,
+.box-big p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.fa-heart-o {
+    position: absolute;
+    bottom: 43px;
+    right: 43px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.box-small a,
+.box-big a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 24px;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+/*==============SECTION FOUR-COL============*/
+
+.four-col-header h2 {
+    color: #222626;
+    font-size: 35px;
+    font-weight: 300;
+    margin-top: 85px;
+}
+
+.four-col h6 {
+    color: #67676d;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.four-col p {
+    color: #959595;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 120px;
+}
+
+/*==============SECTION COLOUR-FULL-WIDTH============*/
+
+.colour-full-width {
+    background-color: #82ca9c;
+    /*    max-height: 536px;*/
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #fff;
+    line-height: 24px;
+}
+
+.colour h2 {
+    font-size: 35px;
+    font-weight: 300;
+    padding-bottom: 15px;
+    line-height: normal;
+}
+
+.colour h6 {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.colour p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/*=====SECTION FULL-IMAGE=====*/
+
+.full-image {
+    background: url(img/2-layers.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 874px;
+}
+
+.car-slogan {
+    color: #fff;
+    padding-top: 300px;
+    padding-bottom: 60px;
+
+}
+
+.car-slogan h1 {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.car-slogan p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.car-slogan a {
+    padding-top: 0px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    padding-bottom: 0px;
+    text-decoration: none;
+}
+
+.car-slogan a:hover {
+    color: #bbb;
+}
+
+/*==============SECTION BUY-BUTTONS============*/
+
+button {
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.buy-buttons {
+    background-color: #f6f7fa;
+}
+
+.button-smaller {
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 11px;
+    color: #fff;
+    line-height: 22px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.small-left {
+    width: 77px;
+    height: 24px;
+    background-color: #e1e1e1;
+}
+
+.small-left:hover {
+    background-color: #c0c0c0;
+}
+
+.small-right {
+    background-color: #bd8cbf;
+    width: 110px;
+    height: 24px;
+}
+
+.small-right:hover {
+    background-color: #ac6bae;
+}
+
+.button-bigger {
+    border: none;
+    width: 151px;
+    height: 46px;
+    border-radius: 3px;
+    background-color: #82ca9c;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.button-bigger:hover {
+    background-color: #60aa7a;
+    cursor: pointer;
+}
+
+.buy-buttons-left,
+.buy-buttons-right {
+    margin-top: 103px;
+    margin-bottom: 182px;
+    padding-top: 47px;
+    padding-left: 53px;
+    padding-bottom: 58px;
+    padding-right: 94px;
+}
+
+.buy-buttons-left:hover,
+.buy-buttons-right:hover {
+    background-color: #fff;
+}
+
+.buy-buttons-left h2,
+.buy-buttons-right h2 {
+    color: #2e3b4e;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+.buy-buttons-left p,
+.buy-buttons-right p {
+    color: #8297a7;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 30px 0;
+}
+
+.fa-apple,
+.fa-windows {
+    color: #c5c5c5;
+    font-size: 23px;
+}
+
+/*=====FOOTER=====*/
+
+footer {
+    background-color: #192431;
+    color: #f6f7fa;
+    font-size: 13px;
+    line-height: 24px;
+    padding-bottom: 110px;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.footer-left,
+.footer-right {
+    padding-top: 120px;
+    padding-bottom: 70px;
+}
+
+.footer-left p {
+    text-align: left;
+}
+
+.footer-left h3,
+.footer-right h3 {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.footer-one-third {
+    padding-left: 0;
+}
+
+.footer-one-third a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-one-third a:hover {
+    color: #bbb;
+}
+
+.footer-one-third h6 {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.footer-one-third ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+input[type=email] {
+    width: 300px;
+    height: 58px;
+    border: none;
+    line-height: 58px;
+    float: left;
+    font-size: 24px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+button[type=submit] {
+    line-height: 58px;
+    height: 58px;
+    width: 70px;
+    background-color: #82ca9c;
+    color: #fff;
+    font-size: 24px;
+    float: left;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+}
+
+button[type=submit]:hover {
+    background-color: #60ba7c;
+}
+
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*media queries*/
+
+/* Small devices (tablets, 768px and up) */
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .col-m-1 {
+        width: 8.33%;
+    }
+
+    .col-m-2 {
+        width: 16.66%;
+    }
+
+    .col-m-3 {
+        width: 25%;
+    }
+
+    .col-m-4 {
+        width: 33.33%;
+    }
+
+    .col-m-5 {
+        width: 41.66%;
+    }
+
+    .col-m-6 {
+        width: 50%;
+    }
+
+    .col-m-7 {
+        width: 58.33%;
+    }
+
+    .col-m-8 {
+        width: 66.66%;
+    }
+
+    .col-m-9 {
+        width: 75%;
+    }
+
+    .col-m-10 {
+        width: 83.33%;
+    }
+
+    .col-m-11 {
+        width: 91.66%;
+    }
+
+    .col-m-12 {
+        width: 100%;
+    }
+
+    /*==============SECTION JUMBOTRON=============*/
+    .iphone2-container {
+        display: none;
+    }
+
+    /*==============SECTION DESCRIPTION============*/
+    /*==============SECTION BOX-GRID============*/
+    .box-small,
+    .box-big {
+        min-height: 340px;
+    }
+
+    /*==============SECTION FOUR-COL============*/
+    .four-col p {
+        margin-bottom: 50px;
+    }
+
+    /*==============SECTION COLOUR-FULL-WIDTH============*/
+    /*==============SECTION FULL-IMAGE===========*/
+    /*==============SECTION BUY-BUTTONS============*/
+    /*==============FOOTER=============*/
+    input[type=email] {
+        width: 220px;
+    }
+}
+
+/* Small devices (old tablets, smartphones 767px and down) */
+
+@media screen and (max-width: 767px) {
+    .col-s-1 {
+        width: 8.33%;
+    }
+    .col-s-2 {
+        width: 16.66%;
+    }
+    .col-s-3 {
+        width: 25%;
+    }
+    .col-s-4 {
+        width: 33.33%;
+    }
+    .col-s-5 {
+        width: 41.66%;
+    }
+    .col-s-6 {
+        width: 50%;
+    }
+    .col-s-7 {
+        width: 58.33%;
+    }
+    .col-s-8 {
+        width: 66.66%;
+    }
+    .col-s-9 {
+        width: 75%;
+    }
+    .col-s-10 {
+        width: 83.33%;
+    }
+    .col-s-11 {
+        width: 91.66%;
+    }
+    .col-s-12 {
+        width: 100%;
+    }
+    /*==============SECTION JUMBOTRON=============*/
+    .iphone2-container {
+        display: none;
+    }
+
+    /*==============SECTION FOUR-COL============*/
+    .four-col p {
+        margin-bottom: 15px;
+    }
+    .four-col:nth-child(4) {
+        margin-bottom: 50px;
+    }
+
+    /*==============SECTION COLOUR-FULL-WIDTH============*/
+    .colour-full-width {
+        padding-bottom: 50px;
+    }
+
+    /*==============SECTION FULL-IMAGE===========*/
+    .car-slogan {
+        padding-top: 200px;
+        padding-bottom: 20px;
+    }
+
+    .car-slogan h1 {
+        font-size: 40px;
+    }
+
+    /*==============SECTION BUY-BUTTONS============*/
+    .buy-buttons-left,
+    .buy-buttons-right {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        padding-top: 30px;
+        padding-left: 0px;
+        padding-bottom: 0px;
+        padding-right: 0px
+    }
+
+    /*==============FOOTER=============*/
+    footer {
+        line-height: 24px;
+        padding-bottom: 40px;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .footer-left,
+    .footer-right {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .btn-group {
+        display: flex;
+        justify-content: center;
+    }
+
+    input[type=email] {
+        width: 170px;
+    }
+
+}
